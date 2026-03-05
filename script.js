@@ -1,4 +1,4 @@
-let totalCliques = 20000;
+let totalCliques = 0;
 var totalUpgrades = 0;
 
 const marcos = document.getElementById('gato');
