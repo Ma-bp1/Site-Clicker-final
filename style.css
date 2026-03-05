@@ -30,7 +30,7 @@
   }
   
   .banner{
-      background-color: #8257B3;
+      background-color: #3784db;
       margin: 0;
       display: flex;
       justify-content: space-between;
@@ -54,7 +54,7 @@
   }
   
   .linksBanner:hover {
-      color: #2b064d; 
+      color: #2c51b8; 
   }
   
   #containerMae{
@@ -70,7 +70,7 @@
   .titulos{
       font-weight: bold;
       font-size: 150%;
-      color: #2b064d;
+      color: #2c51b8;
       font-family: "Jost", sans-serif;
       font-optical-sizing: auto;
       font-weight: 700;
@@ -89,7 +89,7 @@
   }
   
   #tituloUpgrades{
-      color: #2b064d;
+      color: #2c51b8;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -99,10 +99,10 @@
   }
   
   .cardContainer{
-      background-color: #fff0ff;
+      background-color: #c4dcff;
       margin-bottom: 5px;
       border-radius: 8px;
-      border-color: #2b064d;
+      border-color: #2c51b8;
       border-width: 4px;
       border-style: solid;
       padding: 10px;
@@ -110,11 +110,11 @@
   }
   
   .upgradeDisponivel {
-      background-color: #fff0ff;
+      background-color: #c4dcff;
   }
   
   .upgradeIndisponivel {
-      background-color: #a27fca;
+      background-color: #6394d4;
   }
   
   .cardUpgrades{
@@ -127,7 +127,7 @@
   }
   
   .botao{
-      background-color: #8257B3;
+      background-color: #3784db;
       color: white;
       border-radius: 8px;
       border-width: 0;
@@ -142,7 +142,7 @@
   }
   
   .botao:hover{
-      background-color: #2b064d;
+      background-color: #2c51b8;
   }
   
   #telaSobre{
@@ -174,10 +174,10 @@
   .cardContainerSobre{
       display: flex;
       flex-direction: row;
-      background-color: #fff0ff;
+      background-color: #c4dcff;
       margin-bottom: 5px;
       border-radius: 8px;
-      border-color: #2b064d;
+      border-color: #2c51b8;
       border-width: 4px;
       border-style: solid;
       padding: 10px;
@@ -191,7 +191,7 @@
   }
   
   .rodape {
-      background-color: #8257B3; 
+      background-color: #6394d4; 
       text-align: center;
       margin-top: 50px;
       align-items: center;

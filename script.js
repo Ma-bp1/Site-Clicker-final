@@ -68,56 +68,40 @@ function upgradeLeite() {
 }
 
 function upgradeNomeGato() {
-    console.log('teste')
-    const novoNome = prompt("Qual será o novo nome do seu gatinho?");
+    const pegarNome = document.getElementById('nomeGato')
+    const novoNome = confirm("Deseja mudar o nome do seu marcos para o nome alternativo?");
 
-    if (novoNome !== null && novoNome.trim() !== "") {
-        const spanNome = document.getElementById('nomeGato');
-        
-        if (spanNome) {
-            spanNome.innerText = novoNome;
-            alert(`Agora o seu gato se chama ${novoNome}! 🐾`);
-        }
+    if (novoNome){
+        pegarNome.innerHTML = 'Vinicius';
     } else {
-        alert("O gato continuará com o nome antigo.");
+        alert("O Marcos continuará com o nome antigo.");
     }
-}
-
-
-function upgradeRonronar() {
-    console.log('teste')
 }
 
 
 
 export const upgrades = [
     {
-        titulo:"Ratinhos Trabalhadores",
+        titulo:"Clicks automaticos",
         custo:"10",
-        descricao:"Terá ratos para trabalhar pra você (autoclicker 1 clique por segundo cada ratinho)",
+        descricao:"1 Clique por segundo",
         acao: upgradeRatinhos
     },
 
     {
-        titulo:"Leite",
+        titulo:"Multiplicador 2x",
         custo:"20",
-        descricao:"Faz o gato ficar feliz (multiplica 2x o autoclicker)",
+        descricao:"Faz o autoclicker multiplicar os clicks automáticos por múltiplos de 2",
         acao: upgradeLeite
     },
 
     {
-        titulo:"Dar nome ao seu gato",
-        custo:"100",
-        descricao:"Você pode nomear seu bichano",
+        titulo:"Nome secreto",
+        custo:"500",
+        descricao:"?",
         acao: upgradeNomeGato
     },
 
-    {
-        titulo:"Ronronar",
-        custo:"150",
-        descricao:"Seu pet comecou a gostar de você, ele irá ronronar quando você der carinho",
-        acao: upgradeRonronar
-    }
 ]
 
 
