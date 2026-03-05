@@ -1,0 +1,205 @@
+/*Jost Google Font como adicionar:*/
+.jostFont {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  #divMae{
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1%;
+  }
+  
+  #gato {
+      width: 300px;
+      aspect-ratio: 1.5;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out; /*faz o gatinho aumentar, + gato:hover, estará a animação completa*/
+  }
+  
+  #gato:hover {
+      transform: scale(1.09);
+  }
+  
+  #gato:active {
+      transform: scale(0.9);
+      filter: brightness(0.9);
+  }
+  
+  .banner{
+      background-color: #8257B3;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5%;
+      padding-left: 3%;
+      padding-right: 3%;
+      color: white;
+      font-size: 130%;
+      font-family: "Jost", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+  }
+  
+  .linksBanner{
+      color: white;
+      text-decoration: none;
+      display: flex;
+      gap: 20px;
+  }
+  
+  .linksBanner:hover {
+      color: #2b064d; 
+  }
+  
+  #containerMae{
+      display: flex;
+      flex-direction: row;
+      margin: 1%;
+      gap: 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+  
+  .titulos{
+      font-weight: bold;
+      font-size: 150%;
+      color: #2b064d;
+      font-family: "Jost", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+  }
+  
+  
+  #upgrades{
+      margin-left: 30%;
+      align-items: center;
+      justify-content: center;
+      font-family: "Jost", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+  }
+  
+  #tituloUpgrades{
+      color: #2b064d;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      width: 200px;
+  }
+  
+  .cardContainer{
+      background-color: #fff0ff;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      border-color: #2b064d;
+      border-width: 4px;
+      border-style: solid;
+      padding: 10px;
+      cursor: pointer;
+  }
+  
+  .upgradeDisponivel {
+      background-color: #fff0ff;
+  }
+  
+  .upgradeIndisponivel {
+      background-color: #a27fca;
+  }
+  
+  .cardUpgrades{
+      display: flex;
+      flex-direction: row;
+      font-size: 10;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .botao{
+      background-color: #8257B3;
+      color: white;
+      border-radius: 8px;
+      border-width: 0;
+      padding: 10px;
+      text-align: center;
+      font-family: "Jost", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 14px;
+      cursor: pointer;
+  }
+  
+  .botao:hover{
+      background-color: #2b064d;
+  }
+  
+  #telaSobre{
+      margin-right: 20%;
+      margin-left: 20%;
+      justify-content: center;
+  }
+  
+  
+  #tituloSobre{
+      text-align: justify;
+      font-size: 20px;
+  }
+  
+  
+  #cardSobre{
+      text-align: justify;
+      font-size: 20px;
+      
+  }
+  
+  .imgSobre{
+      border-radius: 100%;
+      aspect-ratio: 1;
+      width: 80px;
+      justify-content: center;
+  }
+  
+  .cardContainerSobre{
+      display: flex;
+      flex-direction: row;
+      background-color: #fff0ff;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      border-color: #2b064d;
+      border-width: 4px;
+      border-style: solid;
+      padding: 10px;
+      cursor: pointer;
+      padding: 2%;
+  }
+  
+  .textoSobre{
+      text-align: justify;
+      justify-content: center;
+  }
+  
+  .rodape {
+      background-color: #8257B3; 
+      text-align: center;
+      margin-top: 50px;
+      align-items: center;
+      padding: 0.5%;
+      padding-left: 3%;
+      padding-right: 3%;
+      color: white;
+      font-size: 100%;
+      font-family: "Jost", sans-serif;
+      font-style: normal;
+  }

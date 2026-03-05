@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <title>Document</title>
+
+    <!--Jost Font, de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="divMae">
+        
+        <header class="banner">
+            <p>Gato Clicker</p>
+            <nav class="linksBanner">
+                <a class="linksBanner" href="index.html">Jogo</a>
+                <a class="linksBanner" href="sobre.html">Sobre</a>
+            </nav>
+        </header>
+
+        <div id="containerMae">
+            <div id="gatoInformacoes">
+                <p class="titulos">Nome: <span id="nomeGato"> Dorivaldo </span> </p>
+                <p class="titulos">cliques: <span id="labelClique">0</span> </p>
+
+                <!--#gato possui eventListener no javascript-->
+                <img src="./assets/imagens/Gato1.png" alt="imagem de um gato" id="gato">
+                </img>   
+            </div>
+            
+            <div id="upgrades">
+                <div id="tituloUpgrades" class="titulos">
+                    <p>Upgrades</p>
+                    <p>Custo</p>
+                </div>
+                
+                <script type="module">
+                    import {upgrades} from './script.js';
+
+                    const container = document.getElementById('upgrades');
+
+                    upgrades.forEach((card, indice, descricao) =>{
+                        const cardUpgrade =`
+                            <div class= "cardContainer" onclick="comprarUpgrade(${indice})">
+                                <div class="cardUpgrades">
+                                    <p>${card.titulo}</p>
+                                    <p>${card.custo}</p>
+                                </div>
+                                <div class='cardUpgrades'>
+                                    <p>Quantidade: <span id='labelUpgrades'> 0 </span></p>
+                                </div>
+                                <button class="botao" data-desc="${card.descricao}" onclick='event.stopPropagation(); mostrarDesc(${indice})'>
+                                    Sobre
+                                </button>
+                            </div>
+                        `;
+
+                        container.innerHTML += cardUpgrade;
+                    });
+
+                    window.mostrarDesc = function(indice) {
+                        const upgrade = upgrades[indice];
+                        alert(upgrade.descricao);  
+                    };
+                </script>
+
+            </div>
+        </div>  
+    </div>
+
+    <script type="module" src="script.js"> </script>
+</body>
+</html>
