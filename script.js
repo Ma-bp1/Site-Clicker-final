@@ -1,11 +1,11 @@
-let totalCliques = 0;
+let totalCliques = 20000;
 var totalUpgrades = 0;
 
 const marcos = document.getElementById('gato');
 const parabens = new Audio('./assets/audio/parabens.mp3');
 let somJaTocou = false;
 
-var imagens = ['./assets/imagens/marcos1.png', './assets/imagens/marcos2.png', './assets/imagens/marcos3.png', './assets/imagens/babyMarcos.png']
+var imagens = ['./assets/imagens/marcos1.png', './assets/imagens/marcos2.png', './assets/imagens/marcos3.png']
 var indexImagens = 0;
 
 function aoClicar() {
@@ -103,7 +103,7 @@ function upgradeNomeGato() {
 }
 
 function upgradeBaby () {
-    marcos.src = imagens[3]
+    console.log('ainda n funcionando')
 }
 
 
