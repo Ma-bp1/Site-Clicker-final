@@ -1,6 +1,30 @@
 let totalCliques = 0;
 var totalUpgrades = 0;
 
+const marcos = document.getElementById('gato');
+const parabens = new Audio('./assets/audio/parabens.mp3');
+let somJaTocou = false;
+
+var imagens = ['./assets/imagens/marcos1.png', './assets/imagens/marcos2.png', './assets/imagens/marcos3.png', './assets/imagens/babyMarcos.png']
+var indexImagens = 0;
+
+function aoClicar() {
+    indexImagens++;
+
+    if(indexImagens === imagens.length) {
+        indexImagens = 0;
+    }
+
+    marcos.src = imagens[indexImagens];
+ 
+    if (!somJaTocou) {
+        parabens.play();
+        somJaTocou = true;
+    }
+}
+
+marcos.addEventListener('click', aoClicar);
+
 export function contarUpgrades() {
     totalUpgrades += 1;
     displayUpgrades();
@@ -78,6 +102,10 @@ function upgradeNomeGato() {
     }
 }
 
+function upgradeBaby () {
+    marcos.src = imagens[3]
+}
+
 
 
 export const upgrades = [
@@ -101,6 +129,13 @@ export const upgrades = [
         descricao:"?",
         acao: upgradeNomeGato
     },
+
+    {
+        titulo: 'baby marcos',
+        custo: '1000',
+        descricao: 'its baby marcos!',
+        acao: upgradeBaby
+    }
 
 ]
 

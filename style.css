@@ -15,7 +15,7 @@
   
   #gato {
       width: 300px;
-      aspect-ratio: 1.5;
+      aspect-ratio: 1;
       cursor: pointer;
       transition: transform 0.2s ease-in-out; /*faz o gatinho aumentar, + gato:hover, estará a animação completa*/
   }
